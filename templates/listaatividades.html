@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Atividades</title>
+</head>
+<body background='https://image.freepik.com/fotos-gratis/textura-da-tela-azul_1253-76.jpg'>
+<center>
+    <table border="1" bgcolor="white">
+        <tr>
+            <td>Descrição</td>
+            <td>Data Início</td>
+            <td>Data Final</td>
+            <td>Representante</td>
+        </tr>
+        {% for projetu in projeto %}
+            <tr>
+                <td>{{projetu[0]}}</td>
+                <td>{{projetu[1]}}</td>
+                <td>{{projetu[2]}}</td>
+                <td>{{projetu[3]}}</td>
+            </tr>
+        {% endfor %}
+
+    </table>
+</center>
+</body>
+</html>
